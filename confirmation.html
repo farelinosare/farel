@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>Your date has been scheduled successfully!</p>
+        <p id="date-details"></p>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = 'schedule.html';
+        }
+
+        // Display the scheduled date and time
+        const urlParams = new URLSearchParams(window.location.search);
+        const date = urlParams.get('date');
+        const time = urlParams.get('time');
+        const activity = urlParams.get('activity');
+
+        document.getElementById('date-details').innerText = `You have scheduled a ${activity} on ${date} at ${time}.`;
+    </script>
+</body>
+</html>

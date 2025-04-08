@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Our Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Plan Our First Date!</h1>
+        <form id="date-form">
+            <div class="form-group">
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Select a time:</label>
+                <input type="time" id="time" required>
+            </div>
+            
+            <div class="form-group">
+                <label>What would you like to do?</label>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="activity" value="london" checked>
+                        <span>Jalan-jalan sonde jelas keliling Kupang</span>
+                    </label>
+                    <label>
+                        <span>Nonton bioskop</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="activity" value="movie">
+                        <span>LIPPO</span>
+                        <label>
+                            <input type="radio" name="activity" value="movie">
+                            <span>TRANSMART</span>
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" class="continue-btn">Continue</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
